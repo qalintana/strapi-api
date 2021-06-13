@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "autores",
   "info": {
-    "name": "categories"
+    "name": "autores"
   },
   "options": {
     "increments": true,
@@ -12,10 +12,11 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "posts": {
-      "via": "category",
+      "via": "autore",
       "collection": "posts"
     }
   }
